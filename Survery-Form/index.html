@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1 id='title'>Survey Form</h1>
+        <p id='description'>This is a Form which takes in data from the user and sent it to the server.</p>
+        <form id='survey-form'>
+            <label for='name' id='name-label'>Name</label>
+            <input id='name' type='text' placeholder='Enter your name...'>
+            <label for='email' id='email-label'>Email</label>
+            <input id='email' type='email' placeholder='Enter your email...' required>
+            <label for='number' id='number-label'>Number</label>
+            <input id='number' type='number' placeholder='Enter your number...' required>
+            <label for="points">Points (between 0 and 10):</label>
+            <input type="range" id="points" name="points" min="0" max="10" required>
+            <label for="secret-question">Choose your secret question</label>
+            <select id="secret-question" name="secret">
+                <option value="coding">coding</option>
+                <option value="music">music</option>
+                <option value="food">food</option>
+            </select>
+            <input type='radio' id='male' name='gender' value='Male'>
+            <label for='male'>Male</label><br>
+            <input type='radio' name='gender' value='Female'>
+            <label for='female'>Female</label>
+            <p>Check your best stacks:</p>
+            <input type='checkbox' value="JavaScript">
+            <label for='JavaScript' id='JavaScript'>JavaScript</label><br>
+            <input type='checkbox' id='NodeJs' value="NodeJs">
+            <label for='NodeJs'>NodeJs</label><br>
+            <input type='checkbox' value="Express">
+            <label for='Express' id='Express'>Express</label><br>
+            <input type='checkbox' value="HTML5">
+            <label for='HTML5' id='HTML5'>HTML5</label><br>
+            <input type='checkbox' value="CSS3">
+            <label for='CSS3' id='CSS3'>CSS3</label><br>
+            <input type='checkbox' value="React">
+            <label for='React' id='React'>React</label><br>
+            <input type='checkbox' value="Python">
+            <label for='Python' id='Python'>Python</label><br>
+            <input type='checkbox' value="Go">
+            <label for='Go' id='Go'>Go</label><br>
+            <label for="About you">Tell us more about yourself:</label>
+            <textarea id="w3review" name="w3review" rows="4" cols="50">
+                About yourself...
+                </textarea>
+                <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
